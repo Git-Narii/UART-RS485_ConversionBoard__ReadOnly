@@ -1971,6 +1971,12 @@
 		(uuid "31382918-9659-46d6-b1cc-eb0effbb8b1e")
 	)
 	(junction
+		(at 199.644 123.444)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5b2febc7-5aa6-4bdf-9d42-8c6a91f4971c")
+	)
+	(junction
 		(at 227.584 124.714)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1987,6 +1993,10 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c1261e65-54c8-4339-a888-a952abff0190")
+	)
+	(no_connect
+		(at 183.388 111.506)
+		(uuid "4266052a-0300-40e7-9404-eeac144530d0")
 	)
 	(wire
 		(pts
@@ -2007,16 +2017,6 @@
 			(type default)
 		)
 		(uuid "00ed244e-7066-4532-84fd-72ae8ba66734")
-	)
-	(wire
-		(pts
-			(xy 77.216 44.704) (xy 80.264 44.704)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0fab428e-b85e-4241-87af-d8f4f4b9e7f5")
 	)
 	(wire
 		(pts
@@ -2120,7 +2120,17 @@
 	)
 	(wire
 		(pts
-			(xy 199.644 122.174) (xy 199.644 124.714)
+			(xy 199.644 123.444) (xy 199.644 124.714)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48c38b17-4116-4e2a-82a7-86ccbde41d41")
+	)
+	(wire
+		(pts
+			(xy 199.644 122.174) (xy 199.644 123.444)
 		)
 		(stroke
 			(width 0)
@@ -2207,6 +2217,16 @@
 			(type default)
 		)
 		(uuid "624014a0-068a-4464-ad83-12f84e00978d")
+	)
+	(wire
+		(pts
+			(xy 180.848 111.506) (xy 180.848 123.444)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63a93d36-3268-47b2-ba91-cd2eb41e6808")
 	)
 	(wire
 		(pts
@@ -2440,6 +2460,16 @@
 	)
 	(wire
 		(pts
+			(xy 180.848 123.444) (xy 199.644 123.444)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f396e0f1-2a67-458a-bdaf-4e1649280e8d")
+	)
+	(wire
+		(pts
 			(xy 53.848 116.586) (xy 53.848 118.11)
 		)
 		(stroke
@@ -2447,16 +2477,6 @@
 			(type default)
 		)
 		(uuid "f4f9bd2a-d53b-4e4f-b286-6f1106da074b")
-	)
-	(wire
-		(pts
-			(xy 70.866 44.704) (xy 74.676 44.704)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fc6af126-1b9e-4ecb-9718-aebb09345b67")
 	)
 	(rectangle
 		(start 151.892 88.646)
@@ -2586,7 +2606,7 @@
 		(uuid "44ec7b85-99c4-49c1-bc08-02c556eaa28f")
 	)
 	(label "A"
-		(at 89.154 108.712 180)
+		(at 97.79 108.712 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2630,7 +2650,7 @@
 		(uuid "615946f2-5a5d-4b04-8b50-8b3e3702ce9e")
 	)
 	(label "B"
-		(at 97.79 108.712 180)
+		(at 89.154 108.712 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3845,72 +3865,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 70.866 44.704 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "74ef7014-cc44-4104-b875-430dd53fd15a")
-		(property "Reference" "#PWR07"
-			(at 70.866 48.514 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 70.866 39.878 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 70.866 44.704 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 70.866 44.704 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 70.866 44.704 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "607bc3aa-8976-4dc1-af88-20eef7f25684")
-		)
-		(instances
-			(project "UART-RS485 Read only"
-				(path "/9bac4695-0bb8-42a3-8f69-7ad20dbe9ed8"
-					(reference "#PWR07")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3.3V")
 		(at 209.804 109.474 0)
 		(unit 1)
@@ -4702,72 +4656,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 80.264 44.704 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b1fea1c6-74f2-4400-b6d7-76173bdeb1e7")
-		(property "Reference" "#PWR010"
-			(at 80.264 51.054 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 80.264 49.276 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 80.264 44.704 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 80.264 44.704 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 80.264 44.704 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "82419900-5445-43e9-857e-00f598f9c377")
-		)
-		(instances
-			(project "UART-RS485 Read only"
-				(path "/9bac4695-0bb8-42a3-8f69-7ad20dbe9ed8"
-					(reference "#PWR010")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Regulator_Linear:MIC5504-3.3YM5")
 		(at 104.14 52.07 0)
 		(unit 1)
@@ -5257,7 +5145,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Socket")
-		(at 74.676 39.624 90)
+		(at 180.848 106.426 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5265,7 +5153,7 @@
 		(dnp no)
 		(uuid "e3946a95-0a99-4dd0-9ab1-be628458c1d7")
 		(property "Reference" "J1"
-			(at 74.676 34.036 90)
+			(at 180.848 100.838 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5274,7 +5162,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02_Socket"
-			(at 67.056 36.322 90)
+			(at 173.228 103.124 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5283,7 +5171,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_XA_S02B-XASK-1_1x02_P2.50mm_Horizontal"
-			(at 74.676 39.624 0)
+			(at 180.848 106.426 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5292,7 +5180,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 74.676 39.624 0)
+			(at 180.848 106.426 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5301,7 +5189,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 74.676 39.624 0)
+			(at 180.848 106.426 0)
 			(effects
 				(font
 					(size 1.27 1.27)
